@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+		<servlet>
+			<servlet-name>ItemDetails</servlet-name>
+			<servlet-class>com.jayasadha.inventory_management.ItemServlet</servlet-class>
+		</servlet>
+		
+		
+		<servlet-mapping>
+			<servlet-name>ItemDetails</servlet-name>
+			<url-pattern>/itview</url-pattern>
+		</servlet-mapping>
+		
+	
+		
+		
+	
+		
+		
+		<servlet>
+		  <servlet-name>ItemInsert</servlet-name>
+		  <servlet-class>com.jayasadha.inventory_management.ItemInsert</servlet-class>
+  		</servlet>
+  
+  	<servlet-mapping>
+	  	<servlet-name>ItemInsert</servlet-name>
+	  	<url-pattern>/itinsert</url-pattern>
+	  
+  	</servlet-mapping>
+  	
+  
+  	<servlet>
+	  <servlet-name>ItemUpdate</servlet-name>
+	  <servlet-class>com.jayasadha.inventory_management.ItemUpdate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ItemUpdate</servlet-name>
+  	<url-pattern>/itUpdate</url-pattern>
+  
+  </servlet-mapping>
+  
+ 
+ <servlet>
+	  <servlet-name>ItemDelete</servlet-name>
+	  <servlet-class>com.jayasadha.inventory_management.ItemDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ItemDelete</servlet-name>
+  	<url-pattern>/itDelete</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+	  <servlet-name>Read</servlet-name>
+	  <servlet-class>com.jayasadha.inventory_management.ReadServlrt</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Read</servlet-name>
+  	<url-pattern>/itread</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  </web-app>
